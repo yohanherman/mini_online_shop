@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.productImages{
+
+    width:160px;
+    height:160px;
+    border-radius: 10px;
+}
+
+.productImagesX2{
+    width:300px;
+    height:300px;
+}
+
+.containerProductPage{
+
+display:flex;
+justify-content: center;
+align-items: center;
+margin-top:80px;
+
+
+}
+
+.upperContainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container-product{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+    padding:10px;
+    margin-top: 80px;
+}
+
+.btnProductPage{
+
+    border:none;
+}
+
+
+
+.navbar{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    /* border:1px solid #000; */
+    height:70px; 
+    box-shadow: 0 0 7px grey;
+}
+
+ul{
+   
+    z-index:20px;
+    list-style: none;
+    background:rgb(212, 208, 208);
+    height: 100%;
+    width: 60%;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    margin-left:-100%;
+
+    transition: all 0.2s ease-out;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* icons */
+
+.fa-heart, .fa-cart-shopping, .fa-bars, .fa-message{
+    color: #000;
+    font-size:20px;
+}
+
+#logo{
+    font-size: 30px;
+    color:cornflowerblue;
+    font-weight: bold;
+}
+
+/* togglr menu style */
+
+.showBurger{
+    
+    margin-left: 0;
+}
+
+/* cart */
+
+.imagesCart{
+
+    height:50px;
+    width:50px;
+    border-radius: 7px;
+}
+
+
+.containerCart{
+    padding:10px;
+    display: flex;
+    margin:40px;
+    gap:20px;
+    background-color: rgb(221, 220, 220);
+    
+}
+
