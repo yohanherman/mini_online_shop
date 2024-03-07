@@ -10,16 +10,23 @@ function loadClass($classe)
 
 spl_autoload_register("loadClass");
 
+
 $database = new DataBase;
 $products = new products;
 
-
 include("general/header.php");
-
 
 $Allproduct = $products->displayProduct();
 
 ?>
+
+
+<!--  barre de recherche produit -->
+
+<div class="searchbarcontainer">
+    <input class="searchbar" type="search" name="searchbar">
+</div>
+
 
 <div class="upperContainer">
     <div class="container-product">

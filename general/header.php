@@ -1,7 +1,11 @@
 <?php
 
+// declare(strict_types=1);
 
-declare(strict_types=1);
+
+$Cart = new Cart;
+$database = new DataBase;
+
 
 $connecter = false;
 
@@ -36,19 +40,16 @@ if (!$connecter) { ?>
                         </div>
                     </div>
 
-
-                    <a href=""><i class="fa-solid fa-message"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
 
                     <div id="logo">SOLD</div>
 
                     <div><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i><span class="numberProductCart"><?= $Cart->numberOfproductincart() ?></span></a>
 
                 </nav>
             </div>
         </header>
-
-
 
         <script src="script.js"></script>
     </body>
@@ -89,7 +90,7 @@ if (!$connecter) { ?>
 
                     <div class="btnburger"><i class="fa-solid fa-bars"></i></div>
 
-                    <a href=""><i class="fa-solid fa-message"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i>"></i></a>
 
                     <div>LOGO</div>
 

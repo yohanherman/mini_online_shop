@@ -2,28 +2,22 @@
 
 declare(strict_types=1);
 
-// function loadClass($classe)
-// {
-//     require "classes/$classe.class.php";
-// }
+function loadClass($classe)
+{
+    require "classes/$classe.class.php";
+}
 
-// spl_autoload_register("loadClass");
+spl_autoload_register("loadClass");
 
 
-// $Cart = new Cart;
 
-// if (isset($_POST["addtoCart"])) {
-
-//     $id = (int)$_POST["id"];
-//     $quantity = (int) $_POST["quantity"];
-
-//     $Cart->addToCart($id, $quantity);
-// }
 
 include("general/header.php");
 
 
 ?>
+
+<a href="index.php"><i class="fa-solid fa-arrow-left"></i></a>
 
 <div class="containerProductPage">
     <div>
@@ -45,7 +39,7 @@ include("general/header.php");
     </div>
 
     <div>
-        <button name="addtoCart">add </button>
+        <button name="addtoCart">add to Cart </button>
     </div>
 </form>
 
