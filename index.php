@@ -20,13 +20,19 @@ $Allproduct = $products->displayProduct();
 
 ?>
 
-
 <!--  barre de recherche produit -->
 
-<div class="searchbarcontainer">
-    <input class="searchbar" type="search" name="searchbar">
-</div>
+<form action="classes/products.class.php" method="POST">
 
+    <div class="searchbarcontainer">
+        <input class="searchbar" type="search" name="searchbar">
+    </div>
+
+</form>
+
+<!-- <div class="text">text text text tex text text text</div> -->
+
+<div id="textHTML"></div>
 
 <div class="upperContainer">
     <div class="container-product">
@@ -51,21 +57,6 @@ $Allproduct = $products->displayProduct();
                     <input type="hidden" name="status" value="<?= $product->getStatus() ?>">
 
                 </form>
-
-                <!-- <p><= $product->getDescription() ?></p> -->
-
-
-                <!-- <div><php if ($product->getStatus() == 1) { ?>
-
-                    <p>stock</p>
-                <php
-
-                    } elseif ($product->getStatus() == 0) { ?>
-                    <p>ruptre</p>
-                <php
-                    }
-                ?>
-            </div> -->
 
             </div>
         <?php

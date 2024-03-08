@@ -11,7 +11,6 @@ spl_autoload_register("loadClass");
 
 
 
-
 include("general/header.php");
 
 
@@ -25,10 +24,19 @@ include("general/header.php");
         <h3><?= $_POST["productName"] ?></h3>
         <p><?= $_POST["productPrice"] ?></p>
         <p><?= $_POST["Description"] ?></p>
-        <p><?= $_POST["status"] ?></p>
+        <div><?php if ($_POST["status"] == 1) { ?>
+
+                <p class="Enstock">EN STOCK</p>
+
+            <?php } elseif ($_POST["status"] == 0) { ?>
+
+                <p class="rupture">EN RUPTURE</p>
+
+            <?php } ?>
+        </div>
+
     </div>
 </div>
-
 
 <form action="cart.php" method="POST">
 

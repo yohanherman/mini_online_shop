@@ -40,7 +40,7 @@ if (!$connecter) { ?>
                         </div>
                     </div>
 
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <div class="fa-solid fa-magnifying-glass"></div>
 
                     <div id="logo">SOLD</div>
 
